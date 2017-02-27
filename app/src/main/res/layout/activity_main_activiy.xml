@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <GridView
+        android:layout_width="220dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:padding="2dp"
+        android:background="#000000"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:id="@+id/gridView2"
+        android:numColumns="5"
+        android:accessibilityLiveRegion="none"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+<GridView
+        android:layout_width="220dp"
+        android:layout_height="252dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:padding="2dp"
+        android:background="#000000"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:id="@+id/gridView"
+        android:numColumns="5"
+    android:accessibilityLiveRegion="none"
+    android:layout_marginTop="289dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+</GridView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET"
+        android:id="@+id/bSet"
+        android:layout_alignBottom="@+id/gridView2"
+        android:layout_alignLeft="@+id/bPlay"
+        android:layout_alignStart="@+id/bPlay" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:id="@+id/bPlay"
+        android:layout_above="@+id/bChange"
+        android:layout_alignRight="@+id/bChange"
+        android:layout_alignEnd="@+id/bChange" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:id="@+id/bChange"
+        android:layout_alignBottom="@+id/gridView"
+        android:layout_toRightOf="@+id/gridView"
+        android:layout_toEndOf="@+id/gridView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TURN"
+        android:textSize="30sp"
+        android:id="@+id/textView2"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/gridView2"
+        android:textColor="#050505"
+        android:layout_alignLeft="@+id/bSet"
+        android:layout_alignStart="@+id/bSet" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="450dp"
+        android:id="@+id/llPlay"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/gridView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/bChange"
+        android:layout_alignStart="@+id/bChange"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:text="XXXXXXX"
+            android:id="@+id/tvStatus"
+            android:layout_gravity="top|center"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:textColor="#443d3d" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tvHitMiss"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#904"
+            > </TextView>
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:text="SCORE"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="40dp"
+            android:textSize="30dp"
+            android:id="@+id/tvScore"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="xxxx"
+        android:textSize="80dp"
+        android:textColor="#708955"
+        android:id="@+id/tvResult"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

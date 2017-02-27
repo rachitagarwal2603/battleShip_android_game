@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridView
+        android:layout_width="220dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:padding="2dp"
+        android:background="#000000"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:id="@+id/grid"
+        android:numColumns="5"
+        android:accessibilityLiveRegion="none"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Set your Battle ships"
+        android:id="@+id/textView"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/bSave"
+        android:layout_above="@+id/bStatus"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Player"
+        android:id="@+id/bStatus"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1st Player"
+        android:textSize="20dp"
+        android:id="@+id/tvStatus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView" />
+</RelativeLayout>
